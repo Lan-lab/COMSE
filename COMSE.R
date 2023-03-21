@@ -117,10 +117,14 @@ COMSE<-function(counts,group_min = 30 , k_neighbors = 30, min.cells = 3, feature
 }
 
 
-## demo data
-load("~/Desktop/Projects/project_GRN/data_brain/sceMouseBrain.RData")
-counts<-sceMouseBrain@assays$data$counts
-result = COMSE(counts)
+# Test data                  
+data = readRDS("~/Desktop/demo_data.RDS")
+counts = counts[[1]]
+meta = data[[2]]
+result = COMSE(counts,feature_gene_num = 2000)
+
+## selected gene : result[[1]]
+
 
 
 
