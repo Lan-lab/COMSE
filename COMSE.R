@@ -119,7 +119,7 @@ COMSE<-function(counts,group_min = 30 , k_neighbors = 30, min.cells = 3, feature
 
 # Test data                  
 data = readRDS("~/Desktop/demo_data.RDS")
-counts = counts[[1]]
+counts = data[[1]]
 meta = data[[2]]
 result = COMSE(counts,feature_gene_num = 2000)
 
