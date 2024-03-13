@@ -12,7 +12,7 @@ COMSE[1] is an unsupervised feature selection framework using community detectio
 
 ## Contents
 
-[toc]
+![Workflow](https://github.com/Lan-lab/COMSE/assets/55585881/44e5be58-b035-4ab9-ad91-8bab63bb6035)
 
 
 
@@ -21,6 +21,8 @@ COMSE[1] is an unsupervised feature selection framework using community detectio
 COMSE first partitions all genes into different communities in latent space inferred by Principle Component Analysis (PCA) using the Louvain algorithm[2]. Within each community, we apply a denoising procedure to remove noise introduced during sequencing or other procedures. It then selects highly informative genes from each community based on the Laplacian score [3] (Fig. 1). For more information on COMSE, we recommend the user to check the following article:
 
 > COMSE: Analysis of Single-Cell RNA-seq Data Using Community Detection Based Feature Selection (https://doi.org/10.1101/2023.06.03.543526)
+        
+        
 
 Please cite this article if you use SIGNET in your research. 
 
