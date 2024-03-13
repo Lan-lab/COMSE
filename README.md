@@ -18,7 +18,7 @@ COMSE is an unsupervised feature selection framework using community detection t
 
 ## 1 Introduction to COMSE
 
-SIGNET is a new method for gene regulatory network (GRN) reconstruction and prediction using only single-cell RNA-seq data. It  is mainly based on a deep learning framework, multiple-layers perception (MLP), for relationship prediction between transcription factors (TF) and the non-transcription factors (NTF), combining RcisTarget for motif analysis and AUCell for GRN activity scoring. The predicted network graph and AUC score matrix  obtained by SIGNET can be used further for multiple downstream analysis. For more information on SIGNET, we recommend the user to check the following article:
+COMSE first partitions all genes into different communities in latent space inferred by Principle Component Analysis (PCA) using the Louvain algorithm[1]. Within each community, we apply a denoising procedure to remove noise introduced during sequencing or other procedures. It then selects highly informative genes from each community based on the Laplacian score [2] (Fig. 1). For more information on COMSE, we recommend the user to check the following article:
 
 > SIGNET: single-cell RNA-seq-based gene regulatory network prediction using multiple-layer perceptron bagging (https://doi.org/10.1093/bib/bbab547)
 
