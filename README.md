@@ -28,7 +28,7 @@ Please cite this article if you use SIGNET in your research.
 
 ### 2.1 Package installation
 
-For R platform, the core dependent packages are `RcisTarget` and `AUCell`. 
+For R platform, the core dependent packages are `igraph` and `Rdimtools`. 
 
 ``` R
 install.packages("igraph")
@@ -36,22 +36,22 @@ install.packages("Rdimtools")
 ```
 
 
-### 2.3 Input: expression matrix
+### 2.2 Input: expression matrix
 
-The input of SIGNET is the **expression matrix** of scRNA-seq:
+The input of COMSE is the **expression matrix** of scRNA-seq:
 
 * Each column represents a cell sample and each row represents a gene. 
 * The row name of the matrix should be the gene-symbol of gene ID.
 * Expression units: The preferred expression values are raw values. Since we will use the binarized data matrix for MLP training, the expression units (raw, TPM, FPKM/RPKM) have almost no effect on the binarization matrix.
 
-## 3 SIGNET workflow
+## 3 COMSE Running demo
 
-This tutorial goes through the steps in the SIGNET workflow by following: 
+This tutorial goes through the steps in the COMSE workflow by following: 
 
 1. Data preparation: 
-   * Screen for expression feature genes;
-   * Data transformation by binarization;
-2. Predicting the relationship between TFs and NTFs using MLP model:
+   * Data normalization
+  
+2. Gene subgraph construction and partition:
    * Split the whole dataset into training set and validation set with a ratio of 7:3;
    * Bootstrap to adjust the proportion of positive cases not less than 1/6;
    * MLP training;
