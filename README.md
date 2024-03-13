@@ -40,7 +40,7 @@ install.packages("Rdimtools")
 
 ### 2.2 Input: expression matrix
 
-The input of COMSE is the **expression matrix** of scRNA-seq:
+The input of COMSE is the **expression matrix** of scRNA-seq/bulk RNA-seq data:
 
 * Each column represents a cell sample and each row represents a gene. 
 * The row name of the matrix should be the gene-symbol of gene ID.
