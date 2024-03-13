@@ -11,8 +11,9 @@ COMSE[1] is an unsupervised feature selection framework using community detectio
 
 
 ## Contents
+![workflow](https://github.com/Lan-lab/COMSE/assets/55585881/c0798e84-da4c-4c49-bf09-de831e22f5cb)
 
-![Workflow](https://github.com/Lan-lab/COMSE/assets/55585881/44e5be58-b035-4ab9-ad91-8bab63bb6035)
+
 
 
 
