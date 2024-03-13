@@ -4,7 +4,7 @@
 
 **Abstract**
 
-COMSE is an unsupervised feature selection framework using community detection to capture informative genes from scRNA-seq data. COMSE identified homogenous cell substates with high resolution, as demonstrated by distinguishing different cell cycle stages. Evaluations based on real and simulated scRNA-seq datasets showed COMSE outperformed methods even with high dropout rates in cell clustering assignment. We also demonstrate that by identifying communities of genes associated with batch effects, COMSE parses signals reflecting biological difference from noise arising due to differences in sequencing protocols, thereby enabling integrated analysis of scRNA-seq datasets generated differently.
+COMSE[1] is an unsupervised feature selection framework using community detection to capture informative genes from scRNA-seq data. COMSE identified homogenous cell substates with high resolution, as demonstrated by distinguishing different cell cycle stages. Evaluations based on real and simulated scRNA-seq datasets showed COMSE outperformed methods even with high dropout rates in cell clustering assignment. We also demonstrate that by identifying communities of genes associated with batch effects, COMSE parses signals reflecting biological difference from noise arising due to differences in sequencing protocols, thereby enabling integrated analysis of scRNA-seq datasets generated differently.
 
 **Package**
 * R:  igraph, Rdimtools
@@ -18,7 +18,7 @@ COMSE is an unsupervised feature selection framework using community detection t
 
 ## 1 Introduction to COMSE
 
-COMSE first partitions all genes into different communities in latent space inferred by Principle Component Analysis (PCA) using the Louvain algorithm[1]. Within each community, we apply a denoising procedure to remove noise introduced during sequencing or other procedures. It then selects highly informative genes from each community based on the Laplacian score [2] (Fig. 1). For more information on COMSE, we recommend the user to check the following article:
+COMSE first partitions all genes into different communities in latent space inferred by Principle Component Analysis (PCA) using the Louvain algorithm[2]. Within each community, we apply a denoising procedure to remove noise introduced during sequencing or other procedures. It then selects highly informative genes from each community based on the Laplacian score [3] (Fig. 1). For more information on COMSE, we recommend the user to check the following article:
 
 > COMSE: Analysis of Single-Cell RNA-seq Data Using Community Detection Based Feature Selection (https://doi.org/10.1101/2023.06.03.543526)
 
