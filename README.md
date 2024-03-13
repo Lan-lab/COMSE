@@ -24,8 +24,10 @@ COMSE first partitions all genes into different communities in latent space infe
 > COMSE: Analysis of Single-Cell RNA-seq Data Using Community Detection Based Feature Selection (https://doi.org/10.1101/2023.06.03.543526)
         
         
+        
+        
 
-Please cite this article if you use SIGNET in your research. 
+Please cite this article if you use COMSE in your research. 
 
 ## 2 Requirements
 
