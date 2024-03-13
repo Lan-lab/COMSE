@@ -60,8 +60,7 @@ result = COMSE(counts)
 
 ## Reference
 
-[1] Blondel,V.D., Guillaume,J.-L., Lambiotte,R. and Lefebvre,E. (2008) Fast unfolding of communities in large networks. Journal of Statistical Mechanics: Theory and Experiment, 10.1088/1742-5468/2008/10/P10008.
+[1] Qinhuan Luo, Yao Chen, and Xun Lan. Comse: Analysis of single-cell rna-seq data using community detection based feature selection. bioRxiv, 2023.
+[2] Blondel,V.D., Guillaume,J.-L., Lambiotte,R. and Lefebvre,E. (2008) Fast unfolding of communities in large networks. Journal of Statistical Mechanics: Theory and Experiment, 10.1088/1742-5468/2008/10/P10008.
+[3] He,X., Cai,D. and Niyogi,P. (2005) Laplacian Score for Feature Selection. In 18th International Conference on Neural Information Processing Systems.pp. 507–514.
 
-[2] He,X., Cai,D. and Niyogi,P. (2005) Laplacian Score for Feature Selection. In 18th International Conference on Neural Information Processing Systems.pp. 507–514.
-
-[3] Qinhuan Luo, Yao Chen, and Xun Lan. Comse: Analysis of single-cell rna-seq data using community detection based feature selection. bioRxiv, 2023.
