@@ -44,7 +44,7 @@ The input of COMSE is the **expression matrix** of scRNA-seq/bulk RNA-seq data:
 
 * Each column represents a cell sample and each row represents a gene. 
 * The row name of the matrix should be the gene-symbol of gene ID.
-* Expression units: The preferred expression values are raw values. Since we will use the binarized data matrix for MLP training, the expression units (raw, TPM, FPKM/RPKM) have almost no effect on the binarization matrix.
+* Expression units: The preferred expression values are raw values. Since we will normalize the data by default.
 
 ## 3 COMSE Running demo
 ``` R
