@@ -1,12 +1,3 @@
-library(scRNAseq)
-library(igraph)
-library(nlme)
-library(Seurat)
-library(SeuratObject)
-library(scran)
-library(M3Drop)
-library(Rdimtools)
-library(reshape2)
 ## Core functions
 RMLaplacianScore <- function(data,k=30,t,slices = 100,sample_size=50){
   if(length(which(colSums(data)==0))){
