@@ -26,28 +26,15 @@ Please cite this article if you use SIGNET in your research.
 
 ## 2 Requirements
 
-### 2.1 TF list
-
-Since SIGNET uses the expression of  TFs to predict the expression of NTFs, a gene list for TFs is necessary. There are multiply sources for the TF list and we recommend the TF list provided on the GitHub of pySCENIC (https://github.com/aertslab/pySCENIC/tree/master/resources).  There are 1,789 and 1,721 transcription factors recorded for human (hs_hgnc_tfs.txt) and mouse (mm_mgi_tfs.txt) respectively in each of the txt file. 
-
-> Note: The TF list is just used for determining the argument for the input of the MLP model. If the users would like to predict the relationships between TF and NTF in other species, they can appoint any other credited gene lists for TFs. 
-
-### 2.2 Packages installation 
-
-In order to speed up the whole method, SIGNET should be conducted on both Python and R platform during different steps. Here we present the installation of the core packages used in SIGNET.
-
-For Python platform, the user should install `PyTorch` framework for MLP training and `Scanpy` for data analysis. 
+### 2.1 Package installation
 
 For R platform, the core dependent packages are `RcisTarget` and `AUCell`. 
 
 ``` R
-# Install BiocManager
-if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager")
-BiocManager::version()
-
-# Install RcisTarget & AUCell
-BiocManager::install(c("AUCell", "RcisTarget"))
+install.packages("igraph")
+install.packages("Rdimtools")
 ```
+
 
 ### 2.3 Input: expression matrix
 
