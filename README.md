@@ -71,9 +71,7 @@ result = DenoiseRandom(counts) ## Optional (return denoised data)
 
 [1] Luo Q, Chen Y, Lan X (2024) COMSE: analysis of single-cell RNA-seq data using community detection-based feature selection. BMC Biol 22:167. https://doi.org/10.1186/s12915-024-01963-5
 
-[2] Blondel,V.D., Guillaume,J.-L., Lambiotte,R. and Lefebvre,E. (2008) Fast unfolding of communities in large networks. Journal of Statistical Mechanics: Theory and Experiment, 10.1088/1742-5468/2008/10/P10008
-        
-        .
+[2] Blondel,V.D., Guillaume,J.-L., Lambiotte,R. and Lefebvre,E. (2008) Fast unfolding of communities in large networks. Journal of Statistical Mechanics: Theory and Experiment, https://doi.org/10.1088/1742-5468/2008/10/P10008
 
 [3] He,X., Cai,D. and Niyogi,P. (2005) Laplacian Score for Feature Selection. In 18th International Conference on Neural Information Processing Systems.pp. 507–514.
 
