@@ -21,7 +21,9 @@ COMSE[1] is an unsupervised feature selection framework using community detectio
 
 COMSE first partitions all genes into different communities in latent space inferred by Principle Component Analysis (PCA) using the Louvain algorithm[2]. Within each community, we apply a denoising procedure to remove noise introduced during sequencing or other procedures. It then selects highly informative genes from each community based on the Laplacian score [3] (Fig. 1). For more information on COMSE, we recommend the user to check the following article:
 
-> COMSE: Analysis of Single-Cell RNA-seq Data Using Community Detection Based Feature Selection (https://doi.org/10.1101/2023.06.03.543526)
+> COMSE: Analysis of Single-Cell RNA-seq Data Using Community Detection Based Feature Selection (https://doi.org/10.1186/s12915-024-01963-5)
+        
+        
         
         
         
@@ -67,9 +69,11 @@ result = DenoiseRandom(counts) ## Optional (return denoised data)
 
 ## Reference
 
-[1] Qinhuan Luo, Yao Chen, and Xun Lan. Comse: Analysis of single-cell rna-seq data using community detection based feature selection. bioRxiv, 2023.
+[1] Luo Q, Chen Y, Lan X (2024) COMSE: analysis of single-cell RNA-seq data using community detection-based feature selection. BMC Biol 22:167. https://doi.org/10.1186/s12915-024-01963-5
 
-[2] Blondel,V.D., Guillaume,J.-L., Lambiotte,R. and Lefebvre,E. (2008) Fast unfolding of communities in large networks. Journal of Statistical Mechanics: Theory and Experiment, 10.1088/1742-5468/2008/10/P10008.
+[2] Blondel,V.D., Guillaume,J.-L., Lambiotte,R. and Lefebvre,E. (2008) Fast unfolding of communities in large networks. Journal of Statistical Mechanics: Theory and Experiment, 10.1088/1742-5468/2008/10/P10008
+        
+        .
 
 [3] He,X., Cai,D. and Niyogi,P. (2005) Laplacian Score for Feature Selection. In 18th International Conference on Neural Information Processing Systems.pp. 507–514.
 
